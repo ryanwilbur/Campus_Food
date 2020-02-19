@@ -3,13 +3,10 @@ Campus_Food django backend for our cloud computing project
 
 
 Environment:
-> sudo apt install python-pip
-> sudo -H pip install -U pipenv
-> pipenv shell
-
-
-To run local version:
+> sudo apt install python3-pip
+> pip3 install pipenv
 > cd Campus_Food
+> pipenv shell
 
 # migrate the tables
 > python manage.py makemigrations
