@@ -6,6 +6,7 @@ Environment:
 > sudo apt install python3-pip
 > pip3 install pipenv
 > cd Campus_Food
+> pipenv install
 > pipenv shell
 
 # migrate the tables
