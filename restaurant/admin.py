@@ -1,10 +1,11 @@
 from django.contrib import admin
 from .models import Restaurant, RestaurantHours
 
+
+class RestaurantHoursInline(admin.TabularInline):
+    model = RestaurantHours
+    extra = 1
+
 @admin.register(Restaurant)
 class RestaurantAdmin(admin.ModelAdmin):
-  pass
-
-@admin.register(RestaurantHours)
-class RestaurantHoursAdmin(admin.ModelAdmin):
-  pass
+  inlines = [RestaurantHoursInline,]

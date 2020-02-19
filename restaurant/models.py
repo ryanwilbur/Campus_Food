@@ -35,8 +35,9 @@ class RestaurantHours(models.Model):
     close_hour = models.TimeField()
 
     def __str__(self):
-        return self.restaurant
+        return self.restaurant.name
 
     class Meta:
         verbose_name = 'RestaurantHours'
         verbose_name_plural = 'RestaurantHours'
+        unique_together = ['weekday', 'restaurant']
