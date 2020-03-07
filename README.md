@@ -12,6 +12,12 @@ Campus_Food django backend for our cloud computing project
 > pipenv install
 >
 > pipenv shell
+>
+>pip install djangorestframework
+>
+>pip install markdown       # Markdown support for the browsable API.
+>
+>pip install django-filter  # Filtering support
 
 # Migrate the tables
 > python manage.py makemigrations
