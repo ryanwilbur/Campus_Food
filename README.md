@@ -5,7 +5,7 @@ Campus_Food django backend for our cloud computing project
 # Setup the environment:
 > sudo apt install python3-pip
 >
-> pip3 install pipenv
+> sudo pip3 install pipenv
 >
 > cd Campus_Food
 >
