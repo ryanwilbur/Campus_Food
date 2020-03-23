@@ -8,7 +8,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     queryset = Restaurant.objects.all()
     serializer_class = RestaurantSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['id']
+    filterset_fields = ['id','name']
 
 class RestaurantHoursViewSet(viewsets.ModelViewSet):
     queryset = RestaurantHours.objects.all()
